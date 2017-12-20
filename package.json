@@ -4,8 +4,8 @@
   "description": "The project description",
   "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev":"nodemon server/index.js"
+    "test": "mocha --exit",
+    "start:dev": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,13 @@
   },
   "homepage": "https://github.com/dorktobes/hrsf83-thesis#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "cassandra-driver": "^3.3.0",
     "express": "^4.16.2",
     "nodemon": "^1.12.5"
+  },
+  "devDependencies": {
+    "artillery": "^1.6.0-12",
+    "mocha": "^4.0.1"
   }
 }
